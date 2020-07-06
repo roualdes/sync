@@ -1,7 +1,4 @@
 SOURCE="testbank:/home/edward/synced/"
-DESTINATION="/Users/edward/Documents/"
+DESTINATION="$HOME/Documents/"
 
-rsync -zau --delete -e ssh \
-      "$SOURCE" "$DESTINATION"
-
-
+rsync -zvau --delete -e ssh "$SOURCE" "$DESTINATION"
